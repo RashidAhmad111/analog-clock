@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color:white
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #212121;
+}
+.container{
+    position:relative
+}
+.clock{
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    background-color:lightslategray;
+    border: 10px solid white;
+    box-shadow: 10px 5px 3px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+justify-content: center;
+align-items: center;
+border-color: black;
+
+
+    
+}
+.clock span{
+    position:absolute;
+    transform: rotate(calc(30deg * var(--i)));
+     inset: 12px;
+     text-align: center;
+}
+.clock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+display: inline-block;
+    font-size: 20px;
+    text-align: center;
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hand i{
+    position: absolute;
+    background-color:var(--clr);
+    width: 4px;
+   height: var(--h);
+
+    border-radius: 8px;
+
+}
+#rt{
+    margin-left: 1000px;
+    margin-top: 300px;
+    font-size: 20px;
+    color: black;
+    height: 40px;
+    width: 140px;
+    font-family: cursive;
+    border: 2px solid red;
+    box-shadow: 3px 5px 6px greenyellow;
+    transition: ease-in-out 1s;
+    background-color: blue;
+   
+}
+#rt:hover{
+    cursor: pointer;
+    transform: calc(3px 1px);
+    background-color: aqua;
+}
+
+
